@@ -2,24 +2,24 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="依台灣護理學會112年版評分表設計的學生個案報告個人作業。">
-  <title>個案報告｜學生個人作業</title><link rel="stylesheet" href="style.css?v=2">
+  <meta name="description" content="學生自行選找一篇已發表個案報告，依112年版審查評分表填寫評語及評分。">
+  <title>個案報告審查練習（個人報告）</title><link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
-<header><a class="brand" href="#">護理・寫作練習室</a><span>學生個人作業 · 112 年版規準</span></header>
+<header><a class="brand" href="#">護理・審查練習室</a><span>個案報告審查練習 · 個人報告</span></header>
 <div class="layout">
-<aside aria-label="作業章節"><p class="eyebrow">YOUR CASE REPORT</p><h2>從觀察，到照護。</h2><p class="muted">循著護理過程，整理你的臨床思考。</p><nav id="nav"></nav><div class="progress-box"><label for="progress">章節填寫進度 <strong id="progressText">0 / 9</strong></label><progress id="progress" max="9" value="0"></progress><small>填寫進度僅供參考，不代表評分。</small></div></aside>
+<aside aria-label="作業章節"><p class="eyebrow">CASE REPORT REVIEW</p><h2>從閱讀，到評析。</h2><p class="muted">依據文章內容，提出評語與評分。</p><nav id="nav"></nav><div class="progress-box"><label for="progress">審查完成進度 <strong id="progressText">0 / 10</strong></label><progress id="progress" max="10" value="0"></progress><small>完成評語與各細項評分後，計入進度。</small></div></aside>
 <main>
-<div class="intro"><p class="eyebrow">INDIVIDUAL ASSIGNMENT</p><h1>我的個案報告</h1><p>記錄評估的線索，連結文獻與照護，呈現每一個判斷的依據。</p><div class="tags"><span>總分 100 分</span><span>9 個報告章節</span><span>摘要 500 字內</span></div></div>
-<div class="notice">本作業依台灣護理學會「個案報告審查評分表」112 年 10 月 24 日修訂版設計，為課堂練習工具。個案請使用代稱，勿填入可識別病人的資料。</div>
+<div class="intro"><p class="eyebrow">INDIVIDUAL ASSIGNMENT</p><h1>個案報告審查練習</h1><p>個人報告｜自行選找一篇已發表的個案報告，閱讀後依各項規準給予評語與評分。</p><div class="tags"><span>總分 100 分</span><span>10 項審查項目</span><span>評語＋評分</span></div></div>
+<div class="notice">作業方式：學生自行選找一篇已發表的個案報告，填寫文章資料，再依台灣護理學會「個案報告審查評分表」（112 年 10 月 24 日修訂）逐項填寫評語與評分。評語請根據文章內容指出優點、缺失與改進建議，可註明頁碼或段落。摘要的「500 字內」是對受評文章的規準，並非評語字數限制。</div>
 <form id="assignment">
-<section class="card" id="identity"><div class="section-heading"><span class="number">✎</span><div><h2>學生與作業資料</h2><p>姓名、學號與題目將一併顯示於匯出作業。</p></div></div><div class="fields"><label>學生姓名 <b>*</b><input name="studentName" autocomplete="name" required placeholder="請輸入姓名" maxlength="80"></label><label>學號 <b>*</b><input name="studentId" required placeholder="請輸入完整學號" maxlength="80"></label><label class="wide">報告題目 <b>*</b><input name="reportTitle" required placeholder="為這份個案報告訂下明確的題目" maxlength="250"></label><label>班級<input name="className" placeholder="選填"></label><label>完成日期<input name="reportDate" type="date"></label></div></section>
+<section class="card" id="identity"><div class="section-heading"><span class="number">✎</span><div><h2>學生與受評文章資料</h2><p>學生姓名、學號及受評文章資料將一併顯示於匯出報告。</p></div></div><div class="fields"><label>學生姓名 <b>*</b><input name="studentName" autocomplete="name" required placeholder="請輸入姓名" maxlength="80"></label><label>學號 <b>*</b><input name="studentId" required placeholder="請輸入完整學號" maxlength="80"></label><label class="wide">受評文章題目 <b>*</b><input name="reportTitle" required placeholder="請填寫自行選找的已發表個案報告題名" maxlength="250"></label><label class="wide">文章完整出處 <b>*</b><textarea name="articleCitation" required placeholder="作者、出版年、文章題目、期刊名稱、卷（期）、頁碼、DOI（如有）"></textarea></label><label class="wide">文章網址或 DOI<input name="articleUrl" placeholder="選填：文章連結或 DOI"></label><label>班級<input name="className" placeholder="選填"></label><label>完成日期<input name="reportDate" type="date"></label></div></section>
 <div id="sections"></div>
-<section class="card" id="writing"><div class="section-heading"><span class="number">✓</span><div><h2>文字敘述與最後檢查</h2><p>文字敘述占 5 分，適用於整篇報告。</p></div></div><label class="check"><input type="checkbox" name="structure">文章結構清晰、文辭通順正確（2 分）</label><label class="check"><input type="checkbox" name="reasoning">整體架構表現出護理過程之思考過程（3 分）</label><label class="check"><input type="checkbox" name="privacy">我已確認個案使用代稱，並移除可識別病人的資料。</label><p class="muted">原表提醒：是否通過仍應以整篇文章能否凸顯護理過程決定。此頁不自動給分，勾選僅供自我檢查。</p></section>
+<section class="card" id="summary"><div class="section-heading"><span class="number">Σ</span><div><h2>審查總評</h2><p>整合各項評析，說明這篇文章能否凸顯護理過程。</p></div></div><div class="score-summary"><strong id="totalScore">尚未完成評分</strong><span id="scoreProgress">已評 0 / 24 細項</span></div><p class="muted">原表參考：60 分（含）以上通過，59 分（含）以下不通過；結果仍應以整篇文章是否能凸顯護理過程來決定。此處為學生對文章的練習評分，並非教師給學生的作業成績。</p><label for="overallComment">總評 <b>*</b></label><textarea name="overallComment" id="overallComment" required placeholder="綜合說明文章的優點、主要缺失、改進建議，以及是否呈現完整護理過程。"></textarea><div class="print-text" id="print-overallComment"></div><label for="decision">學生審查決議 <b>*</b></label><select name="decision" id="decision" required><option value="">請選擇</option><option value="通過">通過</option><option value="不通過">不通過</option></select><p id="decisionNote" role="status"></p></section>
 <section class="card handin"><h2>保存與繳交</h2><p>本頁不會將作業傳給老師。請下載作業檔，再依老師指定方式繳交；也可使用列印功能另存 PDF。</p><div class="actions"><button type="submit" class="primary">下載作業（.md）</button><button type="button" id="print">列印 / 另存 PDF</button><button type="button" id="backup">匯出可續寫草稿</button><label class="button" for="restore">匯入草稿</label><input id="restore" type="file" accept=".json,application/json" hidden></div><p id="feedback" role="status" aria-live="polite"></p></section>
 </form>
 <footer>依據：台灣護理學會個案報告審查評分表 · 112 年 10 月 24 日修訂<br>草稿保存在此瀏覽器；更換裝置前請匯出可續寫草稿。</footer>
 </main></div>
 <div class="savebar"><span id="saveStatus" role="status">尚未填寫</span><a href="#identity">回到學生資料 ↑</a></div>
-<script src="app.js"></script>
+<script src="app.js?v=3"></script>
 </body></html>
