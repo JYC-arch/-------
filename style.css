@@ -32,3 +32,6 @@ select{display:block;width:100%;border:1px solid #cbd6cf;border-radius:6px;backg
 .score-summary{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--accent);padding:18px;border-radius:8px}.score-summary strong{font-size:22px}.score-summary span{font-size:13px}#decisionNote{font-size:13px;color:#8c6646}
 @media(max-width:720px){h1{font-size:30px}.criterion{flex-wrap:wrap;gap:10px}.criterion>label{flex-basis:100%}.score-input{margin-left:auto}.score-summary{align-items:flex-start;flex-direction:column}}
 @media print{#identity:before{content:'個案報告審查練習（個人報告）'}.criteria-list{border:1px solid #bbb}.criterion{padding:6px 10px;break-inside:avoid}.score-input input{width:40px!important}.score-summary{background:white;border:1px solid #bbb}.card{break-before:auto}.section-heading{break-after:avoid}#identity textarea{display:block;min-height:100px;border:0;padding:0}select{border:0;padding:0}.subtotal{color:black}}
+
+.title-source{display:block;font-size:17px;line-height:1.8;letter-spacing:0;font-weight:500;margin-top:14px;color:var(--green)}
+@media print{#identity:before{content:"個案報告審查練習（個人報告）\A採用台灣護理學會個案報告審查評分表（中華民國112年10月24日修訂）";white-space:pre-wrap;font-size:14pt;line-height:1.8}}
