@@ -2,6 +2,7 @@
 (()=>{
 const {sessions,rubric,tasks}=classroomConfig;
 const requested=new URLSearchParams(location.search).get('session');
+if(requested==='1109'){location.replace('group-practice.html');return;}
 const lesson=sessions.find(x=>x.id===requested);
 if(!lesson){document.querySelector('.practice-shell').innerHTML='<h1>請選擇課堂練習</h1><p>請由課堂練習區選擇日期進入。</p><a href="index.html#classroom">回到課堂練習區 →</a>';document.querySelector('.savebar').hidden=true;return;}
 const label='採用台灣護理學會個案報告審查評分表（中華民國112年10月24日修訂）';
@@ -32,6 +33,6 @@ form.addEventListener('submit',e=>{e.preventDefault();if(!ready())return;downloa
 document.querySelector('#practice-print').addEventListener('click',()=>{if(ready())window.print();});
 document.querySelector('#practice-backup').addEventListener('click',()=>{download(JSON.stringify({kind:'classroom-review',version:1,session:lesson.id,values:values()},null,2),'application/json;charset=utf-8','json');feedback.textContent='已匯出本次草稿，可稍後匯入續寫。';});
 document.querySelector('#practice-import').addEventListener('change',async e=>{const file=e.target.files[0];if(!file)return;try{if(file.size>5*1024*1024)throw Error('檔案過大');const d=JSON.parse(await file.text());if(d.kind!=='classroom-review'||d.version!==1||d.session!==lesson.id||!d.values||typeof d.values!=='object'||Array.isArray(d.values)||!controls.some(el=>Object.hasOwn(d.values,el.name)))throw Error('此檔案不是本次課堂練習的草稿，請核對日期');if(controls.some(el=>el.value.trim())&&!confirm('匯入將取代本次目前填寫內容，是否繼續？'))return;for(const el of controls)el.value='';restore(d.values);save();feedback.textContent='本次草稿已匯入。';}catch(err){feedback.textContent='匯入失敗：'+err.message;}finally{e.target.value='';}});
-document.querySelector('#lesson-switch').innerHTML=sessions.map(s=>s.id===lesson.id?`<span aria-current="page">${s.date} 練習${s.number}</span>`:`<a href="practice.html?session=${s.id}">${s.date} 練習${s.number}</a>`).join('');
+document.querySelector('#lesson-switch').innerHTML=sessions.map(s=>s.id===lesson.id?`<span aria-current="page">${s.date} 練習${s.number}</span>`:`<a href="${s.id==='1109'?'group-practice.html':'practice.html?session='+s.id}">${s.date} 練習${s.number}</a>`).join('');
 window.addEventListener('beforeprint',update);update();
 })();
