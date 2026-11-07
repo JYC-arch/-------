@@ -1,0 +1,6 @@
+'use strict';
+const portalViews={home:document.querySelector('#home-view'),classroom:document.querySelector('#classroom-view'),'final-report':document.querySelector('#final-view')};
+const reviewView=document.querySelector('#review-view');
+const reviewHashes=new Set(['case-review','identity','writing','abstract','introduction','literature','assessment','problems','interventions','evaluation','discussion','references','summary']);
+function routeAssignmentArea(){const hash=decodeURIComponent(location.hash.slice(1))||'home';const isReview=reviewHashes.has(hash);for(const [name,view] of Object.entries(portalViews))view.hidden=isReview||name!==(Object.hasOwn(portalViews,hash)?hash:'home');reviewView.hidden=!isReview;document.querySelector('#review-savebar').hidden=!isReview;document.title=isReview?'個案報告審查練習（個人報告）｜護理報告之撰寫_作業區':`${hash==='classroom'?'課堂練習｜':hash==='final-report'?'期末報告｜':''}護理報告之撰寫_作業區`;for(const link of document.querySelectorAll('.top-nav a')){if(link.hash==='#'+(isReview?'final-report':hash))link.setAttribute('aria-current','page');else link.removeAttribute('aria-current');}if(!isReview||hash==='case-review')window.scrollTo(0,0);else requestAnimationFrame(()=>document.getElementById(hash)?.scrollIntoView({block:'start',behavior:'instant'}));}
+window.addEventListener('hashchange',routeAssignmentArea);routeAssignmentArea();

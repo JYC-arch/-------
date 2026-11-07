@@ -2,9 +2,13 @@
 
 本儲存庫用於課程各週課堂練習與期末報告。
 
-[開啟目前的個案報告審查練習](https://jyc-arch.github.io/nursing-report-writing-assignments/)
+[開啟作業區首頁](https://jyc-arch.github.io/nursing-report-writing-assignments/)
 
-後續可依週數新增獨立資料夾（例如 week-01、week-02），期末報告使用 final-report 資料夾，各作業皆可有自己的網頁與說明。目前首頁為個案報告審查練習。
+- [課堂練習](https://jyc-arch.github.io/nursing-report-writing-assignments/#classroom)
+- [期末報告](https://jyc-arch.github.io/nursing-report-writing-assignments/#final-report)
+- [個案報告審查練習](https://jyc-arch.github.io/nursing-report-writing-assignments/#case-review)
+
+後續可依週數新增獨立資料夾（例如 week-01、week-02），期末報告使用 final-report 資料夾，各作業皆可有自己的網頁與說明。首頁分為「課堂練習」與「期末報告」兩區。目前課堂練習尚未公告；個案報告審查練習位於期末報告區。
 
 ## 個案報告審查練習（個人報告）
 

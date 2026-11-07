@@ -3,13 +3,23 @@
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="學生自行選找一篇已發表個案報告，依112年版審查評分表填寫評語及評分。">
-  <title>個案報告審查練習（個人報告）｜採用台灣護理學會個案報告審查評分表（中華民國112年10月24日修訂）</title><link rel="stylesheet" href="style.css?v=4">
+  <title>護理報告之撰寫_作業區</title><link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
-<header><a class="brand" href="#">護理・審查練習室</a><span>個案報告審查練習 · 個人報告</span></header>
-<div class="layout">
+<style>[hidden]{display:none!important}</style>
+<header><a class="brand" href="#home">護理報告之撰寫_作業區</a><nav class="top-nav" aria-label="作業區導覽"><a href="#classroom">課堂練習</a><a href="#final-report">期末報告</a></nav></header>
+
+<main class="portal" id="home-view">
+<p class="eyebrow">NURSING REPORT WRITING</p><h1>護理報告之撰寫<span class="portal-subtitle">作業區</span></h1><p class="portal-lead">從每週的課堂練習，到完整的期末評析，在這裡找到你的學習任務。</p>
+<div class="zone-grid"><a class="zone-card classroom-zone" href="#classroom"><span class="zone-index">01 / CLASSROOM</span><h2>課堂練習</h2><p>依上課週次查閱練習說明，完成當週學習任務。</p><span class="zone-link">進入課堂練習 →</span></a><a class="zone-card final-zone" href="#final-report"><span class="zone-index">02 / FINAL REPORT</span><h2>期末報告</h2><p>查閱期末作業要求，進行個案報告審查與評析。</p><span class="zone-link">進入期末報告 →</span></a></div>
+<p class="portal-note">請依教師公告的作業要求及指定方式繳交。網頁填寫內容可下載保存。</p>
+</main>
+<main class="portal" id="classroom-view" hidden><a class="back-link" href="#home">← 回到作業區首頁</a><p class="eyebrow">CLASSROOM PRACTICE</p><h1>課堂練習</h1><p class="portal-lead">各週課堂練習將依上課進度新增於此。</p><section class="empty-zone"><span class="empty-symbol">＋</span><h2>課堂練習尚未公告</h2><p>目前尚無已發布的課堂練習。請依教師上課公告查看後續任務。</p></section><a class="text-link" href="#final-report">前往期末報告 →</a></main>
+<main class="portal" id="final-view" hidden><a class="back-link" href="#home">← 回到作業區首頁</a><p class="eyebrow">FINAL REPORT</p><h1>期末報告</h1><p class="portal-lead">依作業說明完成個人報告，整理你的閱讀、評析與審查判斷。</p><a class="assignment-card" href="#case-review"><span class="assignment-type">個人報告 · 已發布</span><h2>個案報告審查練習</h2><p>自行選找一篇已發表的個案報告，依評分表填寫評語與評分。</p><p class="source-caption">採用台灣護理學會個案報告審查評分表（中華民國112年10月24日修訂）</p><span class="zone-link">開始審查練習 →</span></a><p class="portal-note">完成後可下載作業或列印另存 PDF，再依教師指定方式繳交。</p></main>
+<div class="layout" id="review-view" hidden>
 <aside aria-label="作業章節"><p class="eyebrow">CASE REPORT REVIEW</p><h2>從閱讀，到評析。</h2><p class="muted">依據文章內容，提出評語與評分。</p><nav id="nav"></nav><div class="progress-box"><label for="progress">審查完成進度 <strong id="progressText">0 / 10</strong></label><progress id="progress" max="10" value="0"></progress><small>完成評語與各細項評分後，計入進度。</small></div></aside>
 <main>
+<a class="back-link" href="#final-report">← 回到期末報告區</a>
 <div class="intro"><p class="eyebrow">INDIVIDUAL ASSIGNMENT</p><h1>個案報告審查練習（個人報告）<span class="title-source">採用台灣護理學會個案報告審查評分表（中華民國112年10月24日修訂）</span></h1><p>個人報告｜自行選找一篇已發表的個案報告，閱讀後依各項規準給予評語與評分。</p><div class="tags"><span>總分 100 分</span><span>10 項審查項目</span><span>評語＋評分</span></div></div>
 <div class="notice">作業方式：學生自行選找一篇已發表的個案報告，填寫文章資料，再依台灣護理學會「個案報告審查評分表」（112 年 10 月 24 日修訂）逐項填寫評語與評分。評語請根據文章內容指出優點、缺失與改進建議，可註明頁碼或段落。摘要的「500 字內」是對受評文章的規準，並非評語字數限制。</div>
 <form id="assignment">
@@ -20,6 +30,7 @@
 </form>
 <footer>依據：台灣護理學會個案報告審查評分表 · 112 年 10 月 24 日修訂<br>草稿保存在此瀏覽器；更換裝置前請匯出可續寫草稿。</footer>
 </main></div>
-<div class="savebar"><span id="saveStatus" role="status">尚未填寫</span><a href="#identity">回到學生資料 ↑</a></div>
+<div class="savebar" id="review-savebar" hidden><span id="saveStatus" role="status">尚未填寫</span><a href="#identity">回到學生資料 ↑</a></div>
 <script src="app.js?v=4"></script>
+<script src="portal.js?v=1"></script>
 </body></html>
