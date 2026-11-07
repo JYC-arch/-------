@@ -1,4 +1,12 @@
-# 個案報告審查練習（個人報告）
+# 護理報告之撰寫_作業區
+
+本儲存庫用於課程各週課堂練習與期末報告。
+
+[開啟目前的個案報告審查練習](https://jyc-arch.github.io/nursing-report-writing-assignments/)
+
+後續可依週數新增獨立資料夾（例如 week-01、week-02），期末報告使用 final-report 資料夾，各作業皆可有自己的網頁與說明。目前首頁為個案報告審查練習。
+
+## 個案報告審查練習（個人報告）
 
 採用台灣護理學會個案報告審查評分表（中華民國112年10月24日修訂）
 
@@ -22,7 +30,7 @@
 
 ## 網站與資料
 
-正式網頁：https://jyc-arch.github.io/-------/
+正式網頁：https://jyc-arch.github.io/nursing-report-writing-assignments/
 
 靜態網頁，直接開啟 index.html 即可使用。可在 GitHub Pages 設定 main 分支與根目錄發布。各項目使用不同柔和色系。
 
